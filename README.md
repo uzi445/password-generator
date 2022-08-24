@@ -1,2 +1,4 @@
 # password-generator
-Only JS
+Only JS password generator
+
+
