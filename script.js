@@ -65,9 +65,16 @@ const numberAlphabetArr = [
   "0",
 ];
 let pass = "";
-// [Math.floor(Math.random() * array.length)]
 
-for (let i = 0; i < 9; i++) {
+function randomIntFromInterval(min, max) {
+  // min and max included
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+const passLength = randomIntFromInterval(8, 12);
+console.log(passLength);
+
+for (let i = 0; i < passLength; i++) {
   let random =
     numberAlphabetArr[Math.floor(Math.random() * numberAlphabetArr.length)];
   pass += random;
